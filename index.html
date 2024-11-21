@@ -1,73 +1,120 @@
-<header>
-  <h1 class="logo">Thinkfulbnb</h1>
-  <nav>
-    <ul>
-      <li><a href="#find-rental">Stay</a></li> <!-- Changed href to match an existing section ID -->
-      <li><a href="#about">About</a></li>
-      <li><a href="#ideas">Ideas</a></li>
-      <li><a href="#host">Host</a></li>
-    </ul>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thinkfulbnb</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pangolin&family=Lato&display=swap"
+    rel="stylesheet"
+  />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Thinkfulbnb</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#stay">Stay</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#ideas">Ideas</a></li>
+        <li><a href="#host">Host</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <section id="find-rental"> <!-- ID already matches 'Stay' -->
-    <h2>Find your perfect vacation rental</h2>
-    <form>
-      <div class="form-row">
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location" placeholder="Search destination">
-      </div>
-      <div class="form-row">
-        <label for="arrive">Arrive:</label>
-        <input type="date" id="arrive" name="arrive">
-      </div>
-      <div class="form-row">
-        <label for="depart">Depart:</label>
-        <input type="date" id="depart" name="depart">
-      </div>
-      <div class="form-row">
-        <label for="type">Type:</label>
-        <select id="type" name="type">
-          <option value="apartment">Apartment</option>
-          <option value="barn">Barn</option>
-          <option value="castle">Castle</option>
-          <option value="houseboat">Houseboat</option>
-          <option value="tiny-house">Tiny House</option>
-          <option value="yacht">Yacht</option>
-          <option value="yurt">Yurt</option>
-        </select>
-      </div>
-      <button type="submit">Search</button>
-    </form>
-  </section>
+  <main>
+    <!-- Stay -->
+    <section id="stay">
+      <h2>Find the perfect vacation rental</h2>
+      <form>
+        <div class="form-row">
+          <label for="location">Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Search destination"
+          />
+        </div>
+        <div class="form-row">
+          <label for="arrive">Arrive:</label>
+          <input type="date" id="arrive" name="arrive" />
+        </div>
+        <div class="form-row">
+          <label for="depart">Depart:</label>
+          <input type="date" id="depart" name="depart" />
+        </div>
+        <div class="form-row">
+          <label for="type">Type:</label>
+          <select id="type" name="type">
+            <option value="apartment">Apartment</option>
+            <option value="barn">Barn</option>
+            <option value="castle">Castle</option>
+            <option value="houseboat">Houseboat</option>
+            <option value="tiny-house">Tiny House</option>
+            <option value="yacht">Yacht</option>
+            <option value="yurt">Yurt</option>
+          </select>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <div class="about-container">
-      <img src="images/vecteezy_summer-beach-background-illustration_23712446.jpg" alt="Beach Image" class="responsive-image">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo in lorem facilisis dignissim at non est. Fusce in ipsum eu ligula fermentum ullamcorper.</p>
-    </div>
-  </section>
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-container">
+        <img src="images/images(a)/humphrey-muleba-dyj7RTs85Fs-unsplash.jpg" alt="Pool Image" />
+        <p>
+          Discover unique rentals worldwide. From cozy cabins to modern homes,
+          we offer a range of rentals for your next vacation.
+        </p>
+      </div>
+    </section>
 
-  <section id="ideas">
-    <h2>Ideas</h2>
-    <div class="grid-container">
-      <h3>Forest retreats</h3>
-      <img src="images/images(a)/image/sergei-a--heLWtuAN3c-unsplash.jpg" alt="Forest Retreats Image" class="responsive-image">
-      <h3>Beaches</h3>
-      <img src="images/vecteezy_summer-beach-background-illustration_23712446.jpg" alt="Beach Image" class="responsive-image">
-      <h3>Rustic cabins</h3>
-      <img src="images/images(a)/ethan-sykes-pgNyFfcNN9w-unsplash.jpg" alt="Rustic Cabins Image" class="responsive-image">
-      <h3>Pet-friendly</h3>
-      <img src="images/images(a)/roberto-nickson-gRHEt2kF3NU-unsplash.jpg" alt="Pet-friendly Image" class="responsive-image">
-    </div>
-  </section>
+    <!-- Ideas -->
+    <section id="ideas">
+      <h2>Ideas</h2>
+      <div class="grid-container">
+        <div>
+          <h3>Forest retreats</h3>
+          <img src="images/images(a)/image/sergei-a--heLWtuAN3c-unsplash.jpg" alt="Forest Retreat" />
+        </div>
+        <div>
+          <h3>Beaches</h3>
+          <img src="images/vecteezy_summer-beach-background-illustration_23712446.jpg" alt="Beach House" />
+        </div>
+        <div>
+          <h3>Rustic cabins</h3>
+          <img src="images/images(a)/ethan-sykes-pgNyFfcNN9w-unsplash.jpg" alt="Rustic Cabins" />
+        </div>
+        <div>
+          <h3>Pet-friendly</h3>
+          <img src="images/images(a)/roberto-nickson-gRHEt2kF3NU-unsplash.jpg" alt="Pet-friendly" />
+        </div>
+      </div>
+    </section>
 
-  <section id="host">
-    <div class="host-container">
-      <p>Want to become a Thinkfulbnb Host? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget metus nulla.</p>
-      <img src="images/images(a)/pexels-wendywei-5306739.jpg" alt="Host Image" class="responsive-image">
-    </div>
-  </section>
-</main>
+    <!-- Host -->
+    <section id="host">
+      <h2>Want to Become a Thinkfulbnb Host?</h2>
+      <div class="host-container">
+        <p>
+          Join our community of hosts and share your space with travelers. We
+          provide tools and support to ensure a seamless hosting experience.
+        </p>
+        <img src="images/images(a)/pexels-wendywei-5306739.jpg" alt="Become a Host" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Thinkfulbnb</p>
+  </footer>
+</body>
+</html>
